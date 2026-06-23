@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil | Ryon Ozora</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="hero-header">
+        <img src="Foto.png" alt="Foto Profil" width="120" height="120" id="profile-pic" onclick="openImage()">
+        <h1>FIQTORIL OYUN</h1>
+        <h4>Web Developer | Freelancer | Digital Services</h4>
+        <p>
+          Membantu individu, pelajar, dan pelaku usaha dalam membangun website yang modern, responsif, dan mudah digunakan.
+        </p>
+        <p>
+          Berfokus pada kualitas, kenyamanan pengguna, dan tampilan profesional untuk memberikan hasil yang sesuai kebutuhan klien.
+        </p>
+    </header>
+    <main>
+        <section id="experience">
+            <h2>PENGALAMAN</h2>
+            <p>&bull; Membuat website profil pribadi dan portofolio.</p>
+            <p>&bull; Mengembangkan sistem informasi berbasis web.</p>
+            <p>&bull; Mengerjakan tugas dan proyek pemrograman.</p>
+            <p>&bull; Membantu klien dalam pembuatan dan pengelolaan website.</p>
+        </section>
+        <section id="skills">
+            <h2>KEAHLIAN</h2>
+            <ul>
+              <li>HTML5, CSS3 & JavaScript</li>
+              <li>PHP & MySQL</li>
+              <li>Responsive Web Design</li>
+              <li>UI/UX Design</li>
+              <li>Pengelolaan Hosting dan Domain</li>
+              <li>Problem Solving</li>
+              <li>Git & GitHub</li>
+              <li>Microsoft Office</li>
+            </ul>
+        </section>
+        <section id="about">
+            <h2>TENTANG SAYA</h2>
+            <p>
+              Saya adalah seorang pengembang web yang memiliki minat besar dalam dunia teknologi dan desain digital.
+              Saya berpengalaman dalam membuat website yang responsif, menarik, dan mudah digunakan. Dengan komitmen terhadap kualitas serta kepuasan klien, saya selalu berusaha memberikan hasil terbaik dalam setiap proyek yang dikerjakan.
+            </p>
+            <p>
+              Dengan pengalaman dalam membangun berbagai proyek berbasis web, saya berfokus pada pembuatan tampilan yang modern, responsif, dan mudah digunakan. Saya percaya bahwa sebuah website tidak hanya harus terlihat menarik, tetapi juga harus memberikan pengalaman yang nyaman bagi pengguna.
+            </p>
+            <p>
+                Saya selalu mengutamakan kualitas, ketelitian, dan komunikasi yang baik dalam setiap pekerjaan. Bagi saya, kepuasan klien adalah prioritas utama, sehingga setiap proyek akan dikerjakan dengan penuh tanggung jawab dan profesionalisme hingga mencapai hasil terbaik.
+            </p>
+        </section>
+        <section id="why-me">
+            <h2>KOMITMEN SAYA</h2>
+            <p>&bull; Memberikan hasil kerja yang berkualitas.</p>
+            <p>&bull; Mengutamakan kepuasan klien.</p>
+            <p>&bull; Menyelesaikan proyek sesuai target waktu.</p>
+            <p>&bull; Menjaga komunikasi yang jelas dan responsif.</p>
+            <p>&bull; Terus belajar dan mengikuti perkembangan teknologi terbaru.</p>
+        </section>
+        <div class="order-button">
+            <a href="Hal_Order.html">
+                <button>Order Sekarang</button>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Ryon Ozora. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:ryonosama2@gmail.com" class="footer-btn">
+                    <i class="fas fa-envelope"></i>Email
+                </a>
+                <a href="https://github.com/ryon-ui/Portofolio-01"
+                    target="_blank" class="footer-btn">
+                    <i class="fab fa-github"></i>GitHub
+                </a>
+                <a href="https://www.tiktok.com/"
+                    target="_blank" class="footer-btn">
+                    <i class="fab fa-tiktok"></i>TikTok
+                </a>
+                <a href="https://www.instagram.com/"
+                    target="_blank" class="footer-btn">
+                    <i class="fab fa-instagram"></i>Instagram
+                </a>
+                <a href="https://wa.me/6287766495185"
+                    target="_blank" class="footer-btn">
+                    <i class="fab fa-whatsapp"></i>WhatsApp
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div id="imageModal" class="modal">
+    <div class="profile-card">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img src="Foto.png" alt="Foto Profil" class="profile-preview">
+        <h2>Ryon Ozora</h2>
+        <p>@ryon.ozora</p>
+        <div class="share-buttons">
+            <a href="#" onclick="copyLink()">
+                <i class="fas fa-link"></i>
+                <span>Salin</span>
+            </a>
+            <a href="https://wa.me/6287766495185" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+            <a href="https://instagram.com/username_ig"
+               target="_blank">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+            <a href="mailto:ryonosama2@gmail.com">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </div>
+    </div>
+    <div id="imageModal" class="modal" onclick="closeImage()">
+    <img src="Foto.png" alt="Foto Profil">
+    </div>
+    <script src="JavaScript.js"></script>
+</body>
+</html>
