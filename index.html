@@ -11,7 +11,7 @@
 <body>
     <header class="hero-header">
         <img src="Foto.png" alt="Foto Profil" width="120" height="120" id="profile-pic" onclick="openImage()">
-        <h1>FIQTORIL OYUN</h1>
+        <h1>RYON OZORA</h1>
         <h4>Web Developer | Freelancer | Digital Services</h4>
         <p>
           Membantu individu, pelajar, dan pelaku usaha dalam membangun website yang modern, responsif, dan mudah digunakan.
@@ -25,6 +25,33 @@
             </a>
         </div>
     </header>
+    <div id="imageModal" class="modal">
+    <div class="profile-card">
+        <span class="close-btn" onclick="closeImage()">&times;</span>
+        <img src="Foto.png" alt="Foto Profil" class="profile-preview">
+        <h2>Ryon Ozora</h2>
+        <p>@ryon.ozora</p>
+        <div class="share-buttons">
+            <a href="#" onclick="copyLink()">
+                <i class="fas fa-link"></i>
+                <span>Salin</span>
+            </a>
+            <a href="https://wa.me/6287766495185" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+            <a href="https://instagram.com/username_ig"
+               target="_blank">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+            <a href="mailto:ryonosama2@gmail.com">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </div>
+    </div>
     <div id="imageModal" class="modal" onclick="closeImage()">
     <img src="Foto.png" alt="Foto Profil">
     </div>
