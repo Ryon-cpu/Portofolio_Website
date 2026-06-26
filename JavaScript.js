@@ -1,13 +1,55 @@
-function halo() {
-    alert("Halo! Selamat Datang Di Portofolio Ryon Ozora");
-}
 function openImage() {
-    document.getElementById("imageModal").style.display = "flex";
+    const modal = document.getElementById("imageModal");
+
+    if (modal) {
+        modal.style.display = "flex";
+    }
 }
+
 function closeImage() {
-    document.getElementById("imageModal").style.display = "none";
+    const modal = document.getElementById("imageModal");
+
+    if (modal) {
+        modal.style.display = "none";
+    }
 }
+
 function copyLink() {
-    navigator.clipboard.writeText(window.location.href);
-    alert("Link berhasil disalin!");
+    navigator.clipboard.writeText(window.location.href)
+        .then(() => {
+            alert("Link berhasil disalin!");
+        })
+        .catch(() => {
+            alert("Gagal menyalin link!");
+        });
 }
+
+window.addEventListener("scroll", () => {
+    const navbar = document.getElementById("navbar");
+
+    if (navbar) {
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    }
+});
+
+window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        closeImage();
+    }
+});
+
+window.addEventListener("click", (event) => {
+    const modal = document.getElementById("imageModal");
+
+    if (event.target === modal) {
+        closeImage();
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Portofolio Ryon Ozora berhasil dimuat.");
+});
